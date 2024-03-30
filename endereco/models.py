@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 class Endereco(models.Model):
     nome = models.CharField(max_length=255, blank=True) 
-    cep = models.CharField(max_length=8)
+    cep = models.CharField(max_length=9)
     logradouro = models.CharField(max_length=255)
-    numero = models.IntegerField(blank=True)
+    numero = models.IntegerField(default=0)
     complemento = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
