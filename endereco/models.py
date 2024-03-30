@@ -2,11 +2,11 @@ from django.db import models
 
 # Create your models here.
 class Endereco(models.Model):
-    nome = models.CharField(max_length=255) 
-    cep = models.CharField(max_length=255)
+    nome = models.CharField(max_length=255, blank=True) 
+    cep = models.CharField(max_length=8)
     logradouro = models.CharField(max_length=255)
-    numero = models.IntegerField()
-    complemento = models.CharField(max_length=255)
+    numero = models.IntegerField(blank=True)
+    complemento = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
         endereco = self.logradouro + ', ' + str(self.numero)
