@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Endereco(models.Model):
-    nome = models.CharField(max_length=255, blank=True) 
+    nome_endereco = models.CharField(max_length=255, blank=True) 
     cep = models.CharField(max_length=9)
     logradouro = models.CharField(max_length=255)
     numero = models.IntegerField(default=0)

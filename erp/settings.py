@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
     'endereco',
+    'contato',
+    'cliente',
 ]
 
 MIDDLEWARE = [

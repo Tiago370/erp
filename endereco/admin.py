@@ -6,7 +6,7 @@ from .forms import EnderecoFormAdmin
 from .models import Endereco
 
 class EnderecoAdmin(admin.ModelAdmin):
-    list_display = ('logradouro', 'numero', 'complemento', 'cep', 'nome')
+    list_display = ('logradouro', 'numero', 'complemento', 'cep', 'nome_endereco')
     form = EnderecoFormAdmin
     class Media:
         js = ('jquery.mask.min.js',
