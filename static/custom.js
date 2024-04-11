@@ -1,3 +1,3 @@
-django.jQuery(function($) {
-    django.jQuery('.mask-cep ').mask('0000-000')
-})
+django.jQuery(function() {
+    django.jQuery('.mask-cep').mask('00000-000', {reverse: true});
+});
