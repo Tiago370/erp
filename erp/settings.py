@@ -41,6 +41,12 @@ INSTALLED_APPS = [
     'endereco',
     'contato',
     'cliente',
+    'restaurante',
+    'produto',
+    'combo',
+    'meio_pagamento',
+    'entregador',
+    'pedido',
 ]
 
 MIDDLEWARE = [
